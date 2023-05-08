@@ -7,41 +7,42 @@
     <title>Document</title>
 </head>
 
+<!-- Jag deklarerar fakta i php-taggen som jag sedn anropar i HTML-bodyn -->
+<?php
+$name = "Henrietta";
+$haircolor = "red 🔴";
+$age = 28;
+$birthyear = 1994;
+$bio = "I'm a young woman studing web development. I live <br> in Sollentuna with my two cats but we're looking to move.";
+
+function getAge($birthyear)
+{
+    $nextAge = $birthyear - 2023;
+    return $nextAge;
+}
+?>
+
 <body>
     <h2>Jag ska berätta lite om mig:</h2>
     <p>Mitt namn: </p>
     <?php
-    $name = "Henrietta";
-
-    $hairColor = "red";
-
-    echo "<p>" . $name . $bio . "</p>"
-
-
+    echo $name;
     ?>
     <p>Ålder: </p>
     <?php
-    $age = 28;
-    echo "<p>" . $age . "</p>"
+    echo $age;
+    echo "<span> - but I'm turning " . getAge($birthyear) . " this year. </span>"
+
     ?>
     <p>Min hårfärg: </p>
     <?php
-    $hairColor = "❤️‍🔥🛑🔴";
-    echo "<p>" . $hairColor . "</p>"
+    echo $haircolor;
     ?>
     <p>Lite om mig: </p>
     <?php
-    $bio = "I'm a young woman studing web development. I live <br> in Sollentuna with my two cats but we're looking to move.";
-    echo "<p>" . $bio . "</p><span> And I'm looking for a girlfriend with a butch energy <br> and hopefully big </span> <h2> boobs</h2>"
+    echo $bio;
     ?>
 
-    <?php
-    $color = "red";
-    echo "My car is " . $color . "<br>";
-    echo "My house is " . $COLOR . "<br>";
-    echo "My boat is " . $coLOR . "<br>";
-
-    ?>
 
     <?php
     echo "<h2> Nu ska jag testa arrayer: </h2>";
