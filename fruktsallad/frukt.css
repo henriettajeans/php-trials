@@ -1,0 +1,39 @@
+body{
+    background-color: #f2d2d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    margin: 0;
+
+}
+.header-fruit{
+    margin-top: 5px;
+    border: 6px solid #ebbab94c;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 20px;
+}
+.header-fruit__title{
+    color: #97B1A6;
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+}
+.fruit-container{
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+.fruit-container__title{
+    font-size: 2rem;
+    font-family: 'Neucha', cursive;
+    color: #407076;
+}
+
+.fruit-container__array{
+    font-size: 4rem;
+    padding: 1.5rem;
+}
+
