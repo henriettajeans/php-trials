@@ -3,4 +3,4 @@
 $host = "localhost:8889";
 $db = "bookrace";
 $user = "henrietta";
-$password = "1234";
+$password = "bQZYCMAb!QqBU)cM";
