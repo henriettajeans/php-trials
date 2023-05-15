@@ -13,7 +13,6 @@ $fruits = ["apple" => '🍎', 'kiwi' => '🥝', 'banana' => '🍌', 'peach' => '
 ?>
 <?php
 $f = array("🍍", "🍑", "🍊", "🍐", "🥝");
-echo (array_slice($f, 0, 4));
 ?>
 
 <body>
