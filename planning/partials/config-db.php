@@ -1,6 +1,6 @@
 <?php
 
 $host = "localhost:8889";
-$db = "bookrace";
-$user = "henrietta";
+$db = "my-schema";
+$user  = "henrietta";
 $password = "ADFG";

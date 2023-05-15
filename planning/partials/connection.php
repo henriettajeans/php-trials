@@ -1,7 +1,7 @@
 
 <?php
 
-require_once 'config.php';
+require_once 'config-db.php';
 
 function connect($host, $db, $user, $password)
 {
