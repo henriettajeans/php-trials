@@ -4,7 +4,7 @@ class DB
 {
     private $pdo;
 
-    public function __contruct(PDO $pdo)
+    public function __contsruct(PDO $pdo)
     {
         $this->pdo = $pdo;
     }

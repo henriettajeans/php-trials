@@ -8,8 +8,8 @@ include 'partials/header.php';
 
 
 echo "<ul> Listan:";
-$bollo = $db->getAll("StudentUser");
-foreach ($bollo as $user) {
+$users = $db->getAll("StudentUser");
+foreach ($users as $user) {
     echo "<li> {$user['Name']} </li>";
 }
 echo "</ul>";
