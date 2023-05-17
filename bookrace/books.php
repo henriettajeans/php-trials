@@ -17,7 +17,7 @@ include 'partials/nav.php';
 
 
 echo "<h3> Här finns böckerna ni kan välja bland:</h3>";
-$bookView->renderAllBooksAsList($bookModel->gettAllBooks());
+$bookView->renderAllBooksAsList($bookModel->getAllBooks());
 
 
 

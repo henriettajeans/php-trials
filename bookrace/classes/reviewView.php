@@ -2,11 +2,11 @@
 
 class ReviewView
 {
-    public function renderAllReviewsAsList(array $review): void
+    public function renderAllReviewsAsList(array $reviews): void
     {
         echo "<ul>";
-        foreach ($review as $review) {
-            echo "<li>{$review['title']}  ({$review['student']}) <br> Sidor: {$review['review']} </li>";
+        foreach ($reviews as $review) {
+            echo "<li>{$review['title']}  (recenserad av {$review['student']}) <br> Recension: {$review['review']} </li>";
         }
         echo "</ul>";
     }

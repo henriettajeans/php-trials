@@ -11,3 +11,4 @@ if (isset($_POST['title'], $_POST['student'], $_POST['review'])) {
 
     $reviewModel->addReview($title, $student, $review);
 }
+header("Location: ../reviews.php");

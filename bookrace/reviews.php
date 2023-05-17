@@ -1,6 +1,13 @@
 <?php
 require 'classes/db.php';
+
+require 'classes/reviewView.php';
+require 'classes/reviewModel.php';
+
 $pdo = require 'partials/connect.php';
+
+$reviewModel = new ReviewModel($pdo);
+$reviewView = new ReviewView();
 
 $db = new DB($pdo);
 include 'partials/header.php';
@@ -15,7 +22,7 @@ $reviewView->renderAllReviewsAsList($reviewModel->getAllReviews());
 
 //Formulär där man kan välja student och bok att recensera i en drop down meny, och sen skriva 
 //sin recension i ett input-fält ->
-include 'partials/addReview.php';
 
+include 'partials/addReview.php';
 
 include 'partials/footer.php';

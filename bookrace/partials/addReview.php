@@ -18,9 +18,9 @@ $bookModel = new BookModel(connect($host, $db, $user, $password));
                 <option value="">--Välj bok att recensera--</option>
 
                 <?php
-                $books = $bookModel->gettAllBooks();
+                $books = $bookModel->getAllBooks();
                 foreach ($books as $book) {
-                    echo "<option value='{$author['id']}'>
+                    echo "<option value='{$book['id']}'>
                             {$book['title']} ({$book['pages']} sidor)
                         </option>";
                 }
@@ -30,7 +30,7 @@ $bookModel = new BookModel(connect($host, $db, $user, $password));
             <label for="StudentUser-id" id="Name">Student:</label>
             <option value="">---Välj student---</option>
             <?php
-            $students = $studentModel->gettAllStudents();
+            $students = $studentModel->getAllStudents();
             foreach ($StudentUser as $student) {
                 echo "<option value='{$student['id']}'>
                     {$student['Name']}
