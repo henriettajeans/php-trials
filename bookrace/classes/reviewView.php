@@ -6,7 +6,7 @@ class ReviewView
     {
         echo "<ul>";
         foreach ($review as $review) {
-            echo "<li>{$review['title']}  ({$review['user']}) <br> Sidor: {$review['review']} </li>";
+            echo "<li>{$review['title']}  ({$review['student']}) <br> Sidor: {$review['review']} </li>";
         }
         echo "</ul>";
     }
