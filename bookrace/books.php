@@ -13,6 +13,7 @@ $bookView = new BookView();
 
 
 include 'partials/header.php';
+include 'partials/nav.php';
 
 
 echo "<h3> Här finns böckerna ni kan välja bland:</h3>";

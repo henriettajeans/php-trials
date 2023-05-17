@@ -10,7 +10,3 @@
 
 <body>
     <h1>Bokrejset!</h1>
-    <p>Här kommer en lista på studenterna:</p>
-    <?php
-    echo "<p> lista på studenter</p>"
-    ?>
