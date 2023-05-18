@@ -23,6 +23,8 @@ $reviewView->renderAllReviewsAsList($reviewModel->getAllReviews());
 //Formulär där man kan välja student och bok att recensera i en drop down meny, och sen skriva 
 //sin recension i ett input-fält ->
 
+include 'partials/anotherReview.php';
+
 include 'partials/addReview.php';
 
 include 'partials/footer.php';
