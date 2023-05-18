@@ -9,8 +9,13 @@ metoder eller nya som addReview.php -->
         <input type="text" name="title" id="title">
     </div>
     <div>
-        <label for="student">Student: </label>
-        <input type="text" name="student" id="student">
+        <label for="student">Student:</label>
+        <select name="student-id" id="student">
+            <option value="">--Välj student--</option>
+
+
+
+        </select>
     </div>
     <div>
         <label for="review">Recension: </label>

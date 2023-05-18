@@ -1,10 +1,11 @@
 <?php
-// require_once '../classes/studentModel.php';
-require_once '../classes/bookModel.php';
-// require_once '../classes/reviewModel.php';
 
-// $studentModel = new StudentModel(connect($host, $db, $user, $password));
-// $reviewModel = new ReviewModel(connect($host, $db, $user, $password));
+// upptäck error i koden med dessa rader:
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require_once './classes/bookModel.php';
 $bookModel = new BookModel(connect($host, $db, $user, $password));
 ?>
 
@@ -13,7 +14,7 @@ $bookModel = new BookModel(connect($host, $db, $user, $password));
 <!-- Någonstans i denna kod sker ett error som gör att inget renderas -->
 
 <form action="form-handler/addReviewHandler.php" method="post">
-    <article>
+    <div>
         <label for="title">Välj titel:</label>
         <select name="Books-id" id="Books">
             <option value="">--Välj bok att recensera--</option>
@@ -27,22 +28,10 @@ $bookModel = new BookModel(connect($host, $db, $user, $password));
                         </option>";
             }
             ?>
-    </article>
-    <!-- <article>
-            <label for="StudentUser-id" id="Name">Student:</label>
-            <option value="">---Välj student---</option>
-            <?php
-            $students = $studentModel->getAllStudents();
-            foreach ($StudentUser as $student) {
-                echo "<option value='{$student['id']}'>
-                    {$student['Name']}
-                </option>";
-            }
-            ?>
-        </article> -->
-    <article>
+    </div>
+    <div>
         <label for="review">Recension:</label>
         <input type="text" name="review" id="review">
-    </article>
+    </div>
     <button type="submit">Lägg till recension</button>
 </form>
